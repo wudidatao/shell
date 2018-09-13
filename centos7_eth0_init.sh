@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#该脚本用于初始化网卡名称，一般默认网卡名称都不是eth0
 new_NIC_name=eth0
 old_NIC_name=`ls /etc/sysconfig/network-scripts/ | grep ifcfg | grep -v ifcfg-lo | cut -d "-" -f2`
 
