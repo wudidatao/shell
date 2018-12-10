@@ -16,7 +16,7 @@ echo "关闭selinx"
 sed -i "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config
 
 echo "同步北京时间"
-cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+timedatectl set-timezone Asia/Shanghai
 yum install ntpdate -y
 systemctl start ntpdate.service
 systemctl enable ntpdate.service
