@@ -1,8 +1,8 @@
 #!/bin/bash
 
 host_ip=192.168.1.52
-host_name=public-1.52
-host_domain_name=public-1.52.com
+host_name=public-1-52
+host_domain_name=public-1-52.com
 
 yum install sendmail
 
