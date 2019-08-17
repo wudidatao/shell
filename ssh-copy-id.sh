@@ -16,4 +16,7 @@ IP="
 for ip in $IP;
 do
   ssh-copy-id root@$ip
+  echo $ip"拷贝成功"
+  ssh root@$ip
+  echo $ip"登录成功"
 done
